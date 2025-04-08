@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="select-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+     
+      <div class="left-container">
+        <div id="book-court">
+          <h1>Book a Court</h1>
+          <p class="location">Location</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Pick a Country" readonly />
+            <ul class="options">
+              <li class="option"><p class="singapore">Singapore</p></li>
+              <li class="option"><p class="brazil">Brazil</p></li>
+            </ul>
+          </div>
+          <p class="duration">Duration</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Select time" readonly />
+            <ul class="options">
+              <li class="option"><p class="min-30">30 minutes</p></li>
+              <li class="option"><p class="min-60">60 minutes</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-container">
+      
+        <h2>Pick a date and time</h2>
+        <div class="calendar">
+          <div class="calendar-header">
+            <p class="calendar-month-year"></p>
+            <div class="prev-next"><p class="calendar-month"></p>
+              <button class="btn-previous"><img src="./img/Button - Previous month.svg" alt="previous"></button>
+              <button class="btn-next"><img src="./img/Button - Next month.svg" alt="next"></button>
+            </div>
+          </div>
+   
+              
+          </div>   
+          <div class="calendar-body">
+            <div class="calendar-week">
+           
+              <p class="calendar-day">Mon</p>
+              <p class="calendar-day">Tue</p>
+              <p class="calendar-day">Wed</p>
+              <p class="calendar-day">Thu</p>
+              <p class="calendar-day">Fri</p>
+              <p class="calendar-day">Sat</p>
+              <p class="calendar-day">Sun</p>
+            </div>
+            
+            <div class="calendar-days">
+            </div>
+            <div class="available-time-slots-container">
+              <div class="available-time-slots"></div> </div>
+        </div>
+       
+            
+            </div>
+
+       
+            
+    </main>
+    <script>
+      function myFunction() {
+        console.log("Opa foi");
+      }
+    </script>
+    <script type ="module" src="select-script.js"></script>
+    <script type = "module" src="calendar-script.js"></script>
+  </body>
+</html>
